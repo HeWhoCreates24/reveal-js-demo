@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- Slide 1: Title Slide -->
+        <section>
+          <h2>Quarterly Earnings Report</h2>
+          <p>Financial Overview Q3 2024</p>
+          <p><small>Presented by: 24f2008463@ds.study.iitm.ac.in</small></p>
+        </section>
+
+        <!-- Slide 2: Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ### Executive Summary
+
+            - **Revenue:** Up by 15% Year-over-Year
+            - **Net Profit:** $4.2 Billion
+            - **User Growth:** +1.5 Million new active users
+            - **Strategic Milestones:**
+                - Expansion into Asian markets
+                - Launch of AI-driven analytics platform
+          </textarea>
+        </section>
+
+        <!-- Slide 3: Math Formulas -->
+        <section>
+          <h3>Financial Metrics</h3>
+          <p>Calculating the Compound Annual Growth Rate (CAGR):</p>
+          <p>
+            \[
+             CAGR = \left( \frac{V_{final}}{V_{initial}} \right)^{\frac{1}{t}} - 1
+            \]
+          </p>
+          <p>Where:</p>
+          <ul>
+            <li>$V_{final}$ = Ending Value</li>
+            <li>$V_{initial}$ = Beginning Value</li>
+            <li>$t$ = Time in years</li>
+          </ul>
+        </section>
+
+        <!-- Slide 4: Fragments (Animations) -->
+        <section>
+          <h3>Key Drivers</h3>
+          <ul>
+            <li class="fragment">Innovative Product Features</li>
+            <li class="fragment">Strategic Partnerships</li>
+            <li class="fragment">Operational Efficiency</li>
+            <li class="fragment">Market Diversification</li>
+          </ul>
+        </section>
+
+        <!-- Slide 5: Code Example -->
+        <section>
+          <h3>Data Processing Logic</h3>
+          <pre><code data-trim data-noescape class="language-python">
+# Calculating Quarter Growth
+def calculate_growth(current, previous):
+    if previous == 0:
+        return 0
+    growth = ((current - previous) / previous) * 100
+    return round(growth, 2)
+
+q3_revenue = 45000000
+q2_revenue = 41000000
+
+print(f"Growth: {calculate_growth(q3_revenue, q2_revenue)}%")
+          </code></pre>
+          <aside class="notes">
+            Explain the simple logic used to verify our quarterly growth figures efficiently.
+          </aside>
+        </section>
+
+        <!-- Slide 6: Conclusion -->
+        <section>
+          <h2>Thank You</h2>
+          <p>Any questions?</p>
+        </section>
+
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
